@@ -1,0 +1,13 @@
+Package: blimey
+Type: Package
+Title: Collection of useful things relating to the United Kingdom
+Version: 0.0.1
+Authors@R:
+    c(person(given = c("Andrew", "B."),
+             family = "Collier",
+             role = c("aut", "cre", "cph"),
+             email = "andrew@fathomdata.dev"))
+Description: Data and functions relating to the United Kingdom.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
