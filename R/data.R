@@ -32,3 +32,7 @@
 #' }
 #' @source \url{https://www.whatdotheyknow.com/request/latitude_and_longitude_of_all_ra}
 "railways"
+
+#' UK Railway Stations
+#'
+"railway_stations"
