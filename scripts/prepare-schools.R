@@ -80,7 +80,19 @@ schools <- schools %>%
     subtype = factor(subtype),
     religion = factor(religion),
     admission = factor(admission),
-    rating = factor(rating),
+    rating = ifelse(rating == "Insufficient evidence", NA, rating),
+    rating = factor(
+      rating,
+      levels = c(
+        "Outstanding",
+        "Good",
+        "Requires improvement",
+        "Inadequate",
+        "Serious Weaknesses",
+        "Special Measures"
+      ),
+      ordered = TRUE
+    ),
     inspection = as.Date(inspection, "%d-%m-%Y")
   ) %>%
   mutate_at(vars(starts_with("age_")), as.integer)
