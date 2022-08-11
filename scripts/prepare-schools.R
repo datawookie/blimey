@@ -80,7 +80,9 @@ schools <- schools %>%
     type = factor(type),
     subtype = factor(subtype),
     religion = factor(religion),
-    admission = factor(tolower(admission)),
+    admission = tolower(admission),
+    admission = ifelse(is.na(admission), "unknown", admission),
+    admission = factor(admission),
     rating  = tolower(rating),
     rating = ifelse(rating == "insufficient evidence", NA, rating),
     rating = factor(
