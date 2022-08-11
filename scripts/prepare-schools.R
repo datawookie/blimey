@@ -42,9 +42,9 @@ schools <- read_csv(
   clean_names()
 
 local_authority <- schools %>%
-  select(id = la, name = laname) %>%
+  select(local_authority_id = la, local_authority_name = laname) %>%
   unique() %>%
-  arrange(id)
+  arrange(local_authority_id)
 
 schools <- schools %>%
   select(
@@ -56,8 +56,8 @@ schools <- schools %>%
     -ispost16
   ) %>%
   rename(
-    id = urn,
-    name = schname,
+    school_id = urn,
+    school_name = schname,
     status = schstatus,
     subtype = minorgroup,
     type = schooltype,
