@@ -38,11 +38,11 @@
 "railway_stations"
 
 #' Schools in England
-#' @noRd
 #'
 #' Ofsted (Office for Standards in Education, Children’s Services and Skills) is
 #' the UK government department responsible for inspecting schools and other
 #' social care services for children.
+#' @noRd
 "schools"
 
 #' Local Authorities

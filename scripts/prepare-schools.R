@@ -71,25 +71,27 @@ schools <- schools %>%
     inspection = ofstedlastinsp
   ) %>%
   mutate(
-    subtype = sub(" school$", "", subtype),
+    type = sub(" school$", "", tolower(type)),
+    subtype = sub(" school$", "", tolower(subtype)),
     primary = primary == 1,
     secondary = secondary == 1,
-    status = factor(status),
-    gender = factor(gender),
+    status = factor(tolower(status)),
+    gender = factor(tolower(gender)),
     type = factor(type),
     subtype = factor(subtype),
     religion = factor(religion),
-    admission = factor(admission),
-    rating = ifelse(rating == "Insufficient evidence", NA, rating),
+    admission = factor(tolower(admission)),
+    rating  = tolower(rating),
+    rating = ifelse(rating == "insufficient evidence", NA, rating),
     rating = factor(
       rating,
       levels = c(
-        "Outstanding",
-        "Good",
-        "Requires improvement",
-        "Inadequate",
-        "Serious Weaknesses",
-        "Special Measures"
+        "outstanding",
+        "good",
+        "requires improvement",
+        "inadequate",
+        "serious weaknesses",
+        "special measures"
       ),
       ordered = TRUE
     ),
