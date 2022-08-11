@@ -34,5 +34,13 @@
 "railways"
 
 #' UK Railway Stations
-#'
+#' @noRd
 "railway_stations"
+
+#' Schools in England
+#' @noRd
+"schools"
+
+#' Local Authorities
+#' @noRd
+"local_authority"
