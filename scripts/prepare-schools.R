@@ -82,7 +82,7 @@ schools <- schools %>%
     religion = factor(religion),
     admission = tolower(admission),
     admission = ifelse(is.na(admission), "unknown", admission),
-    admission = factor(admission),
+    admission = factor(admission, levels = c("unknown", "non-selective", "selective")),
     rating  = tolower(rating),
     rating = ifelse(rating == "insufficient evidence", NA, rating),
     rating = factor(
