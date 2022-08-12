@@ -48,3 +48,7 @@
 #' Local Authorities
 #' @noRd
 "local_authority"
+
+#' Postal Codes
+#' @noRd
+"postal"
