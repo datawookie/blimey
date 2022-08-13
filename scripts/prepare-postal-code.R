@@ -36,6 +36,13 @@ source(here("scripts", "prepare-country-code.R"))
 # data © Royal Mail copyright and Database right 2020 Contains National
 # Statistics data © Crown copyright and database right 2020.
 
+# Additional Data Sources
+#
+# 1. https://www.getthedata.com/postcode/RG14-5HW
+#
+# Can get a wide variety of auxiliary data per postal code. Site is static, so
+# amenable to scraping.
+
 FILES <- list.files(here("data-raw", "postal-code"), full.names = TRUE)
 
 postal <- map_dfr(FILES, function(file) {

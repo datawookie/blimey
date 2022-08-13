@@ -50,5 +50,18 @@
 "local_authority"
 
 #' Postal Codes
+#'
+#' Postal codes have four components:
+#'
+#' - Area       (eg. JE)
+#' - District   (eg. JE1)
+#' - Sector     (eg. JE1 0)
+#' - Unit       (eg. JE1 0BD)
+#'
 #' @noRd
 "postal"
+
+#' Postbox Locations
+#'
+#' @noRd
+"postboxes"
