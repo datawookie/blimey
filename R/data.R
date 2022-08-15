@@ -43,7 +43,12 @@
 #' the UK government department responsible for inspecting schools and other
 #' social care services for children.
 #' @noRd
-"schools"
+"schools_england"
+
+#' Schools in Wales
+#'
+#' @noRd
+"schools_wales"
 
 #' Local Authorities
 #' @noRd
