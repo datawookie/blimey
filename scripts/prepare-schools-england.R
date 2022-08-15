@@ -46,7 +46,7 @@ local_authority <- schools %>%
   unique() %>%
   arrange(local_authority_id)
 
-schools <- schools %>%
+schools_england <- schools %>%
   select(
     -laname,
     local_authority_id = la,
@@ -101,5 +101,5 @@ schools <- schools %>%
   ) %>%
   mutate_at(vars(starts_with("age_")), as.integer)
 
-use_data(schools, overwrite = TRUE)
+use_data(schools_england, overwrite = TRUE)
 use_data(local_authority, overwrite = TRUE)
