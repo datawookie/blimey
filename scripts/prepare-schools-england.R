@@ -6,7 +6,7 @@ library(usethis)
 
 # Data downloaded from https://www.compare-school-performance.service.gov.uk/download-data.
 
-CSV <- here("data-raw", "england-school-information.csv")
+CSV <- here("data-raw", "school-england-information.csv")
 
 # URN            - School unique reference number
 # LANAME         - Local authority name
