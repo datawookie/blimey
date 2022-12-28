@@ -1,4 +1,4 @@
-# Retrieve postbox locations from https://postboxes.dracos.co.uk/#15/52.4956/-1.9073.
+# Retrieve postbox locations from https://postboxes.dracos.co.uk/.
 
 import time
 import requests

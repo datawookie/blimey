@@ -13,6 +13,9 @@ postboxes <- read_csv(
   col_types = "ccccddcc"
 )
 
+postboxes %>% filter(postbox_code %in% c("CV6 269", "GU9 6", "IV51 14", "KT20 87", "LA11 151", "PE1 49",
+                                         "PE8 160"))
+
 postboxes <- postboxes %>%
   mutate(
     # Replace "Not collected" with NA.
@@ -42,5 +45,9 @@ postboxes <- postboxes %>%
     )
   ) %>%
   select(-last_collection_saturday)
+
+# Filter out invalid postal codes.
+#
+postboxes <- postboxes %>% filter(str_detect(postbox_code, "[A-Z]{2}"))
 
 use_data(postboxes, overwrite = TRUE)
