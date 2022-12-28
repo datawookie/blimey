@@ -70,3 +70,9 @@
 #'
 #' @noRd
 "postboxes"
+
+#' Place Names
+#'
+#' The meaning of the description codes can be found in `place_names_description`.
+#'
+"place_names"

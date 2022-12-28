@@ -15,6 +15,12 @@ remotes::install_github("datawookie/blimey")
 
 ## Resources
 
+Lots of interesting data to be found at https://geoportal.statistics.gov.uk/.
+
+- [X] Index of Place Names
+- [ ] UPRN
+- [ ] Postcode
+
 <!-- https://twitter.com/northernjamie/status/1564976687049211904 -->
 
 ![](hierarchy_poster_v3.0_AUG_2022_A3.png)
